@@ -265,9 +265,8 @@
 
 ### Activities:
 - Finalizing report document
-- Creating presentation slides
 - Pushing final code to GitHub
-- Preparing demo video
+
 
 ### Hours Logged: 20 hours (ongoing)
 
