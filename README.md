@@ -148,9 +148,9 @@ bash
 cd backend
 
 ### Activate virtual environment (if not already active)
-# Windows:
+ Windows:
 venv\Scripts\activate
-# macOS/Linux:
+ macOS/Linux:
 source venv/bin/activate
 
 ### Start FastAPI server
