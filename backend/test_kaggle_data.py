@@ -15,7 +15,6 @@ def load_kaggle_dataset():
         csv_reader = csv.DictReader(file)
         
         for row in csv_reader:
-            # What our AI will see (no decision!)
             test_case = {
                 'name': row.get('Name', ''),
                 'skills': row.get('Skills', ''),
@@ -25,7 +24,7 @@ def load_kaggle_dataset():
                 'job_role': row.get('Job Role', '')
             }
             
-            # What HR actually decided (for comparison later)
+            # What HR actually decided 
             actual_decision = row.get('Recruiter Decision', 'Unknown')
             
             test_cases.append(test_case)

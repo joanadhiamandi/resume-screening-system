@@ -34,8 +34,6 @@ def load_csv_to_database():
         inserted_count = 0
         for row in csv_reader:
             try:
-                # Insert into job_descriptions table
-                # We'll create synthetic job descriptions from the data
                 job_title = row.get('Job Role', 'Unknown Position')
                 skills = row.get('Skills', '')
                 experience = row.get('Experience (Years)', '0')

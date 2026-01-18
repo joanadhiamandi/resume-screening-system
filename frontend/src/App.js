@@ -9,7 +9,6 @@ function App() {
   const handleResultReceived = (result) => {
     console.log('Received results:', result);
     setScreeningResult(result);
-    // Scroll to results
     setTimeout(() => {
       window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }, 100);
@@ -18,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>🤖 AI Resume Screening System</h1>
+        <h1> AI Resume Screening System</h1>
         <p className="subtitle">Intelligent candidate evaluation powered by machine learning</p>
       </header>
 

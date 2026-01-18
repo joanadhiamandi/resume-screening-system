@@ -249,4 +249,4 @@ if __name__ == "__main__":
     
     accuracy, results = evaluate_system()
     
-    print("\n🎓 This is your research data!")
+    print("\n🎓 This is my research data!")

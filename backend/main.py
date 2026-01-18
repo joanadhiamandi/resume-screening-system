@@ -26,15 +26,15 @@ app = FastAPI(
 # Enable CORS for React frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # React dev server
+    allow_origins=["http://localhost:3000"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 
-# Load AI model at startup (globally, so it only loads once)
-print("🤖 Loading AI model for semantic matching...")
+# Load AI model at startup 
+print(" Loading AI model for semantic matching...")
 try:
     model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
     print("✅ AI model loaded successfully!")
@@ -69,11 +69,11 @@ def calculate_ai_match_score(resume_text: str, job_description: str) -> float:
         return calculate_simple_match_score(resume_text, job_description)
     
     try:
-        # Get embeddings (AI understanding of text meaning)
+        # Get embeddings 
         resume_embedding = model.encode(resume_text, convert_to_tensor=True)
         job_embedding = model.encode(job_description, convert_to_tensor=True)
         
-        # Calculate cosine similarity (how similar the meanings are)
+        # Calculate cosine similarity 
         similarity = util.cos_sim(resume_embedding, job_embedding)
         
         # Convert to percentage score (0-100)
@@ -239,7 +239,7 @@ async def upload_resume(
             # Get recommendation
             recommendation = get_recommendation(match_score)
             
-            # Extract candidate name (simplified - just use first line)
+            # Extract candidate name 
             candidate_name = resume_text.split('\n')[0][:100].strip() if resume_text else "Unknown"
             
             # Save to database

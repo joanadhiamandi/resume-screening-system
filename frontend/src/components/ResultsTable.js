@@ -162,7 +162,7 @@ function ResultsTable({ batchResults }) {
 
       {batchResults.ai_powered && (
         <div className="ai-badge">
-          🤖 Powered by AI Semantic Matching
+           Powered by AI Semantic Matching
         </div>
       )}
     </div>
