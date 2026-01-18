@@ -113,7 +113,7 @@ Unlike traditional Applicant Tracking Systems (ATS) that rely on exact keyword m
 ###  Clone the Repository
 
 git clone https://github.com/joanadhiamandi/resume-screening-system.git
-cd ai-resume-screening
+cd resume-screening-system
 
 ---
 
