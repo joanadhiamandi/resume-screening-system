@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
 import UploadForm from './components/UploadForm';
-import ResultsDisplay from './components/ResultsDisplay';
+import ResultsTable from './components/ResultsTable';
 
 function App() {
   const [screeningResult, setScreeningResult] = useState(null);
 
   const handleResultReceived = (result) => {
+    console.log('Received results:', result);
     setScreeningResult(result);
     // Scroll to results
     setTimeout(() => {
@@ -23,7 +24,7 @@ function App() {
 
       <main className="App-main">
         <UploadForm onResultReceived={handleResultReceived} />
-        {screeningResult && <ResultsDisplay result={screeningResult} />}
+        {screeningResult && <ResultsTable batchResults={screeningResult} />}
       </main>
 
       <footer className="App-footer">

@@ -1,0 +1,211 @@
+.results-table-container {
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #e2e8f0;
+}
+
+.results-header h2 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 28px;
+}
+
+.results-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.results-count {
+  color: #718096;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.export-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.export-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.results-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.results-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.results-table th:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.results-table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  transition: background 0.2s;
+}
+
+.results-table tbody tr:hover {
+  background: #f7fafc;
+}
+
+.results-table td {
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.candidate-name {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.file-name {
+  color: #4a5568;
+  font-size: 14px;
+}
+
+.match-score {
+  min-width: 150px;
+}
+
+.score-cell {
+  position: relative;
+  height: 30px;
+  background: #e2e8f0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.score-bar {
+  position: absolute;
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.8s ease;
+}
+
+.score-text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: 600;
+  color: #2d3748;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.badge-pass {
+  background: #c6f6d5;
+  color: #22543d;
+  border: 2px solid #48bb78;
+}
+
+.badge-review {
+  background: #feebc8;
+  color: #7c2d12;
+  border: 2px solid #ed8936;
+}
+
+.badge-fail {
+  background: #fed7d7;
+  color: #742a2a;
+  border: 2px solid #f56565;
+}
+
+.badge-error {
+  background: #e2e8f0;
+  color: #4a5568;
+  border: 2px solid #a0aec0;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skill-tag {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.skill-tag.matched {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.skill-tag.missing {
+  background: #fed7d7;
+  color: #742a2a;
+}
+
+.more-skills {
+  color: #718096;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.no-skills {
+  color: #a0aec0;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.ai-badge {
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 20px;
+}
