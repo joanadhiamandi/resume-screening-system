@@ -12,7 +12,7 @@ An intelligent AI-powered resume screening system that leverages Natural Languag
 - [Installation](#installation)
 - [Author](#author)
 
----
+
 
 ##  Problem Statement
 
@@ -22,7 +22,7 @@ HR departments spend **excessive time** manually screening resumes, often proces
 - **Inefficient**: Limits the number of candidates that can be evaluated
 - **Costly**: Diverts HR resources from strategic activities
 
----
+
 
 ## Research Question
 
@@ -34,7 +34,7 @@ HR departments spend **excessive time** manually screening resumes, often proces
 3. Evaluate system accuracy against human HR decisions
 4. Validate the system using a large-scale dataset (1,000+ resumes)
 
----
+
 
 ##  Project Overview
 
@@ -48,7 +48,7 @@ This system uses **advanced NLP techniques** to automatically screen resumes aga
 ### Key Innovation:
 Unlike traditional Applicant Tracking Systems (ATS) that rely on exact keyword matching, this system uses **Sentence Transformers** for semantic similarity, capturing conceptual relationships between job requirements and candidate qualifications.
 
----
+
 
 ##  Technologies Used
 
@@ -73,9 +73,6 @@ Unlike traditional Applicant Tracking Systems (ATS) that rely on exact keyword m
 - **Kaggle Resume Dataset**: 11,000+ resumes for training/testing
 - **Pandas & NumPy**: Data manipulation and analysis
 
----
-
----
 
 ##  Features
 
@@ -100,7 +97,7 @@ Unlike traditional Applicant Tracking Systems (ATS) that rely on exact keyword m
 - **Visual Feedback**: Loading states and error handling
 - **Detailed Results**: Matched skills, missing skills, and overall score
 
----
+
 
 ##  Installation
 
@@ -115,7 +112,7 @@ Unlike traditional Applicant Tracking Systems (ATS) that rely on exact keyword m
 git clone https://github.com/joanadhiamandi/resume-screening-system.git
 cd resume-screening-system
 
----
+
 
 ### Create and Activate Virtual Environment
 cd backend
@@ -127,7 +124,7 @@ venv\Scripts\activate
  On macOS/Linux
 source venv/bin/activate
 
----
+
 
 ### Install Python Dependencies
 
@@ -196,7 +193,7 @@ Sort by score, name, or skills
 
 Export results as CSV for further analysis
 
-----
+
 ### Author
 Ioanna Diamanti
 
